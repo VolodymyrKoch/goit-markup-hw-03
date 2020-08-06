@@ -3,39 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
+     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+  />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Web Studio</title>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html" class="logotype"
-          >Web <span class="logo">Studio </span>
-        </a>
-
-        <ul class="nav">
-          <!-- <nav-navigation> -->
-          <li><a href="./index.html" class="current">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="logotype"
+            >Web <span class="logo">Studio </span>
+          </a>
+  
+          <ul class="nav">
+            <!-- <nav-navigation> -->
+            <li><a href="./index.html" class="current">Студия</a></li>
+            <li><a href="./portfolio.html">Портфолио</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li>
+            <a href="mailto:info@devstudio.com">
+              <img src="./images/E-mail.svg" alt="@" />info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380961111111">
+              <img src="./images/tell.svg" alt="tell" />+38 096 111 11 11
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact">
-        <li>
-          <a href="mailto:info@devstudio.com">
-            <img src="./images/E-mail.svg" alt="@" />info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111">
-            <img src="./images/tell.svg" alt="tell" />+38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
@@ -51,7 +57,8 @@
       </div>
 
       <section class="advantages">
-        <h2 class="fix">наши преимущества</h2>
+        <div class="container">
+          <h2 class="fix">наши преимущества</h2>
         <!--приховати через CSS-->
         <ul>
           <li>
@@ -92,10 +99,12 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!-- секция Чем мы занимаемся-->
-      <section class="our_products">
-        <h2>Чем мы занимаемся</h2>
+            <section class="our_products">
+        <div class="container">
+          <h2>Чем мы занимаемся</h2>
         <ul>
           <li>
             <img
@@ -125,11 +134,13 @@
             <h3>Дизайнерские решения</h3>
           </li>
         </ul>
+        </div>
       </section>
 
       <!--section our team-->
       <section class="our_team">
-        <h2>Наша команда</h2>
+        <div class="container">
+          <h2>Наша команда</h2>
         <ul>
           <li>
             <img
@@ -264,10 +275,13 @@
             <!--блок соц мережі end -->
           </li>
         </ul>
+        </div>
+        
       </section>
 
       <!--SECTION constant customers-->
       <section class="customers">
+        <div class="container">
         <h2>Постоянные клиенты</h2>
         <ul>
           <li>
@@ -303,44 +317,45 @@
             /></a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <!--блок з адресою-->
-      <div>
-        <a href="./index.html" class="logotype"
-          >Web <span class="logo">Studio </span>
-        </a>
-        <address>
-          г.Киев, пр-т Л.Украинки, 26
-          <a href="mailto:info@example.com">info@example.com</a> <br />
-          <a href="tell:+380991111111">+38 099 111 11 11</a>
-        </address>
-      </div>
-      <!--блок з соцмережами-->
-      <div>
-        <p class="join"><b> присоединяйтесь</b></p>
-        <ul>
-          <li>
-            <a href="" aria-label="link to Instagram">значок Instagram</a>
-          </li>
-          <li><a href="" aria-label="link to Twitter">значок</a></li>
-          <li><a href="" aria-label="link to faceboock">значок</a></li>
-          <li><a href="" aria-label="link to in">значок</a></li>
-        </ul>
-      </div>
-      <!--блок на підписку-->
-      <div>
-        <p class="join"><b>Подпишитесь на рассылку</b></p>
-        <input type="text" />
-        <a href="" class="button"
-          >Подписаться<img
-            src="./images/telegram.svg"
-            alt="images_telegram"
-            width="24"
-        /></a>
-      </div>
+      <div class="container"><!--блок з адресою-->
+        <div>
+          <a href="./index.html" class="logotype"
+            >Web <span class="logo">Studio </span>
+          </a>
+          <address>
+            г.Киев, пр-т Л.Украинки, 26
+            <a href="mailto:info@example.com">info@example.com</a> <br />
+            <a href="tell:+380991111111">+38 099 111 11 11</a>
+          </address>
+        </div>
+        <!--блок з соцмережами-->
+        <div>
+          <p class="join"><b> присоединяйтесь</b></p>
+          <ul>
+            <li>
+              <a href="" aria-label="link to Instagram">значок Instagram</a>
+            </li>
+            <li><a href="" aria-label="link to Twitter">значок</a></li>
+            <li><a href="" aria-label="link to faceboock">значок</a></li>
+            <li><a href="" aria-label="link to in">значок</a></li>
+          </ul>
+        </div>
+        <!--блок на підписку-->
+        <div>
+          <p class="join"><b>Подпишитесь на рассылку</b></p>
+          <input type="text" />
+          <a href="" class="button"
+            >Подписаться<img
+              src="./images/telegram.svg"
+              alt="images_telegram"
+              width="24"
+          /></a>
+        </div></div>
     </footer>
   </body>
 </html>

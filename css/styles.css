@@ -1,3 +1,11 @@
+/* робим  контент блоків залежним від блоку */
+html {box-sizing: border-box;}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-title-color: #212121;
   --primary-text-color: #757575;
@@ -13,6 +21,7 @@
   background-color: var(--fix-fon);
 }
 body {
+  margin: 0px;
   font-family: roboto, sans-serif;
   font-size: 14px;
   line-height: 1.14;
@@ -23,6 +32,7 @@ h2,
 h3 {
   font-weight: bold;
 }
+
 .logotype {
   font-family: Raleway;
   font-weight: bold;
@@ -39,6 +49,8 @@ a {
 }
 ul {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .nav > a {
@@ -67,17 +79,27 @@ ul {
   color: var(--accent-fon);
 }
 
+.baner {text-align: center;
+}
 .baner > h1 {
   color: var(--accent-text-color);
-  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 /* our advantages */
+.advantages {padding-top: 94px;
+padding-bottom: 0px;
+
+outline: 2px solid var(--fix);}
+
+.advantages h2 {margin: 0px;
+}
 .advantages img {
   background: var(--primary-fon-button);
   border-radius: 4px;
@@ -85,31 +107,45 @@ ul {
 .advantages h3 {
   text-transform: uppercase;
   color: var(--primary-title-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .advantages p {
   line-height: 1.71;
   color: var(--primary-text-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* our_products */
+.our_products { padding-top: 94px;
+  padding-bottom: 94px;
+}
 .our_products h2 {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--primary-title-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+ }
+ .our_products ul {margin-top: 50px;
 }
-
 .our_products h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
   text-transform: uppercase;
   color: var(--accent-text-color);
   background-color: rgba(47, 48, 58, 0.8);
+  
   /* background-size: 370px 70px;
   padding: 2px; */
 }
 
 /* our_team */
-.our_team {
+.our_team {padding-top: 94px;
+  padding-bottom: 94px;
   background: var(--primary-fon-button);
 }
 .our_team li {
@@ -120,19 +156,26 @@ ul {
   line-height: 1.17;
   text-align: center;
   color: var(--primary-title-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
+.our_team ul {margin-top: 50px;}
 .our_team h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--primary-title-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .our_team p {
   text-align: center;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 0px;
+  margin-bottom: 16px;
 }
 /* .Soc_Media {
   background: var(--accent-text-color);
@@ -147,13 +190,20 @@ img:focus {
 } */
 
 /* customers */
+.customers {padding-top: 94px;
+padding-bottom: 94px;}
 .customers h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--primary-title-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  outline: 2px solid var(--fix);
 }
+.customers ul {margin-top: 50px;}
 .customers a {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -199,10 +249,10 @@ img:focus {
   font-size: 16px;
   padding: 6px 22px;
   display: inline-block;
-  /* border: 1px solid black; */
-  border-color: transparent;
   font-family: inherit;
   font-weight: bold;
+  text-align: center;
+  border: 1px solid transparent;
 }
 
 /* button baner*/
@@ -245,3 +295,13 @@ img:focus {
 .our_projects .description:hover {
   background-color: rgba(33, 150, 243, 0.9);
 }
+
+.container {width: 1170px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+
+ /* стерти - delete*/
+outline: 2px solid var(--fix);
+} 
