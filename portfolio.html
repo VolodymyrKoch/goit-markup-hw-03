@@ -3,44 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
+     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+  />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Web Studio</title>
   </head>
 
   <body>
     <header>
-      <nav>
-        <a href="./index.html" class="logotype"
-          >Web <span class="logo">Studio </span>
-        </a>
-
-        <ul class="nav">
-          <!-- <nav-navigation> -->
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html" class="current">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="logotype"
+            >Web <span class="logo">Studio </span>
+          </a>
+  
+          <ul class="nav">
+            <!-- <nav-navigation> -->
+            <li><a href="./index.html">Студия</a></li>
+            <li><a href="./portfolio.html" class="current">Портфолио</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li>
+            <a href="mailto:info@devstudio.com">
+              <img src="./images/E-mail.svg" alt="@" />info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380961111111">
+              <img src="./images/tell.svg" alt="tell" />+38 096 111 11 11
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact">
-        <li>
-          <a href="mailto:info@devstudio.com">
-            <img src="./images/E-mail.svg" alt="@" />info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111">
-            <img src="./images/tell.svg" alt="tell" />+38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
       <section class="filter">
+       <div class="container">
         <h1 class="fix">Портфолио</h1>
         <!--приховати через CSS-->
         <nav>
@@ -62,8 +69,11 @@
             </li>
           </ul>
         </nav>
+       </div>
       </section>
+
       <section class="our_projects">
+       <div class="container">
         <ul>
           <li>
             <a href="">
@@ -219,11 +229,13 @@
             >
           </li>
         </ul>
+       </div>
       </section>
     </main>
 
     <footer class="footer">
-      <!--блок з адресою-->
+     <div class="container">
+ <!--блок з адресою-->
       <div>
         <a href="./index.html" class="logotype"
           >Web <span class="logo">Studio </span>
@@ -257,6 +269,7 @@
             width="24"
         /></a>
       </div>
-    </footer>
+    </div>
+   </footer>
   </body>
 </html>
