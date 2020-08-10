@@ -33,14 +33,6 @@ h2,
 h3 {
   font-weight: bold;
 }
-
-.logotype {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-fon);
-}
 header .logo {
   color: var(--primary-title-color);
 }
@@ -52,6 +44,14 @@ ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
+}
+
+.logotype {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-fon);
 }
 
 .nav > a {
@@ -73,13 +73,19 @@ ul {
 .nav .current {
   color: var(--accent-fon);
 }
+nav {display: flex;
+align-items: center;}
 .nav {display: flex;
+  margin-left: 85px;
 }
 .nav li+li{margin-left: 50px;
-  outline: 2px solid teal;}
+  }
   /* .nav li:not(:last-child){
     background-color: yellowgreen;
     margin-right: 20px;} */
+
+.leveling {display: flex;
+align-items: center;}
 
 .contact a {
   font-weight: 500;
@@ -94,11 +100,11 @@ ul {
   vertical-align: middle;
   padding-right: 10px;
 }
-.contact {display: flex;}
+.contact {display: flex;
+  margin-left: auto;}
 .contact li:not(:last-child){
   margin-right: 30px;
-
-outline: 2px solid black;}
+  }
 
 .baner {text-align: center;
 }
@@ -138,6 +144,9 @@ padding-bottom: 0px;
   margin-bottom: 0px;
   width: 270px;
 }
+.advantages ul {display: flex;
+}
+.advantages li+li {margin-left: 30px;}
 
 /* our_products */
 .our_products { padding-top: 94px;
@@ -152,7 +161,15 @@ padding-bottom: 0px;
   margin-bottom: 0px;
  }
  .our_products ul {margin-top: 50px;
+  display: flex;
 }
+.our_products li:not(:last-child) {margin-right: 30px;}
+ /* Альтернатива1 */
+/* .our_products li+li {margin-left: 30px;} */
+/* Альтернатива2 */
+/* .our_products li {margin-right: 30px;}
+.our_products li:last-child {margin-right: 0px;} */
+
 .our_products h3 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -175,6 +192,8 @@ padding-bottom: 0px;
 }
 .our_team li {
   background: var(--accent-text-color);
+
+  width:calc((100% - 60px)/3) ;
 }
 .our_team h2 {
   font-size: 36px;
@@ -184,7 +203,8 @@ padding-bottom: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.our_team ul {margin-top: 50px;}
+.our_team ul {margin-top: 50px;
+display: flex;}
 .our_team h3 {
   font-weight: 500;
   font-size: 16px;
@@ -193,7 +213,7 @@ padding-bottom: 0px;
   color: var(--primary-title-color);
   margin-top: 30px;
   margin-bottom: 10px;
-  width: 270px;
+  /* width: 270px; */
 }
 .our_team p {
   text-align: center;
@@ -349,7 +369,7 @@ padding-bottom: 50px;}
 }
 .our_projects {padding-bottom: 94px;}
 
-.container {width: 1170px;
+.container {width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
@@ -357,4 +377,5 @@ margin-right: auto;
 
  /* стерти - delete*/
 outline: 2px solid var(--fix);
+border-box;
 } 
