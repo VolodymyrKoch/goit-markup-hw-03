@@ -52,7 +52,10 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-fon);
-}
+
+  display: inline-block;
+  margin-bottom: 20px;
+  }
 
 .nav > a {
   color: var(--primary-title-color);
@@ -190,11 +193,12 @@ padding-bottom: 0px;
   padding-bottom: 94px;
   background: var(--primary-fon-button);
 }
-.our_team li {
+/* .our_team li {
   background: var(--accent-text-color);
 
   width:calc((100% - 60px)/3) ;
-}
+} */
+
 .our_team h2 {
   font-size: 36px;
   line-height: 1.17;
@@ -203,8 +207,15 @@ padding-bottom: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.our_team ul {margin-top: 50px;
-display: flex;}
+.our_team ul {display: flex;}
+.member {margin-top: 50px;
+}
+.member > li {margin-right: 30px;
+background: var(--accent-text-color);
+/* border: 1px solid transparent;
+border-radius: 0px 0px 4px 4px; */
+}
+.member > li:last-child {margin-right: 0px;}
 .our_team h3 {
   font-weight: 500;
   font-size: 16px;
@@ -224,9 +235,10 @@ display: flex;}
   margin-bottom: 16px;
   width: 270px;
 }
-/* .Soc_Media {
-  background: var(--accent-text-color);
-} */
+.Soc_Media {
+  justify-content: center;
+}
+.Soc_Media li:not(:last-child) {margin-right: 10px;}
 .Soc_Media a:hover,
 a:focus {
   background-color: var(--accent-fon);
@@ -250,12 +262,21 @@ padding-bottom: 94px;}
 
   outline: 2px solid var(--fix);
 }
-.customers ul {margin-top: 50px;}
-.customers a {
+.customers ul {margin-top: 50px;
+display: flex;}
+.customers li:not(:last-child) {margin-right: 30px;}
+.customers li {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
+
   border-radius: 4px;
-}
+  width: 170px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+  .customers li:hover {border-color: #2196f3;}
 /* 
 .customers a:hover, :focus, :active, :visited: {
   color: red;
@@ -275,11 +296,22 @@ padding-bottom: 94px;}
 }
 .footer address a {
   color: rgba(255, 255, 255, 0.6);
+
+  display: inline-block;
+  margin-top: 9px;
 }
 .footer .join {
   font-weight: bold;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 20px;
 }
+.footer .join_list {display: flex;}
+.footer .container.leveling {justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;}
+  .footer .join_list li:not(:last-child) {margin-right: 10px;}
 
 /* button footer */
 .footer .button {
