@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --logo-color: #2196F3;
   --descript-color: #757575;
@@ -17,7 +23,23 @@ ul {
   margin: 0px;
 }
 
-body {background-color: turquoise;}
+body {
+    margin: 0px;
+    font-family: roboto, sans-serif;
+    /* font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em; */
+    background-color: turquoise;}
+
+.container {
+width: 1200px;
+padding-right: 15px;
+padding-left: 15px;
+margin-left: auto;
+margin-right: auto;
+outline: 2px solid var(--fix);
+}
+
 
 /* =====header===== */
 header .link {
@@ -53,6 +75,13 @@ color: var(--logo-color);
  
  nav .current {
   color: var(--logo-color);}
+
+  .leveling {display: flex;
+    align-items: baseline;
+  }
+  .header__nav {display: flex;
+    align-items: center;}
+  .header__list {display: flex;}
 
 /* =====hero===== */
 .hero {background-color: #2F303A;}
@@ -205,7 +234,7 @@ footer address a {color: rgba(255, 255, 255, 0.6);
 
 
 /* ====кусочок коду для приховування непотрібно-технічного заголовку===
-===hidden===
+===hidden=== */
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -214,4 +243,4 @@ footer address a {color: rgba(255, 255, 255, 0.6);
   border:0 !important;
   height: 1px !important; 
   width: 1px !important; 
-  overflow: hidden;} */
+  overflow: hidden;}
