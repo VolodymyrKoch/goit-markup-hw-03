@@ -175,10 +175,11 @@ background-color: var(--logo-color);
 
 /* =====advantages===== */
 .advantages__list {
-  /* width: calc((100% - 90px) / 3); */
   display: flex;}
 
-.advantages__list:not(:last-child) {margin-right: 30px;}
+.advantages__item:not(:last-child) {margin-right: 30px;
+/* width: calc((100% - 90px) / 3); */
+}
 
 .advantages__title{
   font-family: Roboto;
@@ -199,6 +200,12 @@ margin-top: 0px;
   color:var(--descript-color);}
 
   /* =====specialty===== */
+  .specialty__list {
+    display: flex;
+  }
+  .specialty__item {
+    width: calc((100% - 60px) / 3);
+  }
 .specialty__title {
 font-family: Roboto;
 font-weight: bold;
