@@ -303,6 +303,9 @@ margin-top: 0px;
 .our_projects {
   margin-bottom: 94px;
 }
+.our_projects__img {
+  margin-bottom: 20px;
+}
 .our_projects__title {
   font-family: Roboto;
 font-weight: bold;
@@ -310,6 +313,8 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color:var(--font-color);
+
+margin-bottom: 4px;
 }
 .our_projects__descript {
   font-family: Roboto;
@@ -318,6 +323,9 @@ font-size: 16px;
 line-height: 1.875;
 letter-spacing: 0.03em;
 color: var(--descript-color);
+
+margin-top: 0px;
+margin-bottom: 20px;
 }
 
 /* =====filter===== */
@@ -341,7 +349,7 @@ color: var(--descript-color);
   .our_projects__item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
-  our_projects__item:not(:nth-last-child(-n+3)) {
+  .our_projects__item:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
   } 
 
