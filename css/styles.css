@@ -13,6 +13,7 @@ html {box-sizing: border-box;}
   --font-color: #212121;
   --background-button: #F5F4FA; 
   --dark-background-color: #FFFFFF;
+  --fix: tomato;
 }
 
 h1,h2,h3 {margin: 0px;}
@@ -44,13 +45,22 @@ outline: 2px solid var(--fix);
 
 
 /* =====header===== */
+.header__address {
+  margin-left: auto;
+}
+header .item + .item {margin-left: 50px;}
+
+header p {margin: 25px 0px;}
 header .link {
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.02em;
-  color: var(--font-color);}
+  color: var(--font-color);
+  display: block;
+  padding: 31px 0px;
+}
   header .link:hover, header .link:focus {
     color: var(--logo-color);
   }
@@ -61,8 +71,13 @@ header .link {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+
+  margin-right: 93px;
  } 
   .logo_Studio { color: var(--font-color);}
+  .addres-link:not(:last-child) {margin-right: 50px;}
+ 
+
 .addres-link 
 {font-family: Roboto;
   font-style: normal;
@@ -86,6 +101,7 @@ color: var(--logo-color);
   .header__list {display: flex;}
   header {
     border-bottom: 1px solid #ECECEC;}
+    main p {margin-bottom: 0px;}
 
 /* =====hero===== */
 .hero {
@@ -98,7 +114,9 @@ color: var(--logo-color);
   line-height: 1.364;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--dark-background-color) ; }
+  color: var(--dark-background-color) ; 
+
+margin-bottom: 30px ;}
 
   /* =====button===== */
   .hero .button {
