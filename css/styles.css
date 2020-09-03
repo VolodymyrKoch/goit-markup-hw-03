@@ -113,7 +113,7 @@ color: var(--logo-color);
 
 /* =====hero===== */
 .hero {
-  text-align: center;
+  display: block;
   background-color: #2F303A;}
 .hero .title { 
   font-family: Roboto;
@@ -125,7 +125,12 @@ color: var(--logo-color);
   color: var(--dark-background-color) ; 
 
 margin-bottom: 30px ;}
-.hero__bloс {padding:200px 0px;}
+.hero__bloс {
+  margin-right: auto;
+  margin-left: auto;
+  padding:200px 0px;
+ max-width: 696px;
+ text-align: center;}
 
   /* =====button===== */
   .button {cursor: pointer;
@@ -310,6 +315,8 @@ margin-top: 0px;
 
   
 /* =====Portfolio===== */
+.our_projects a {
+  display: block;}
 .our_projects {
   margin-bottom: 94px;
 }
